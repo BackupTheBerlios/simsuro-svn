@@ -1,0 +1,31 @@
+#
+# Makefile for Asuro
+# (will be included by target/avr/Makefile and target/unix/Makefile)
+#
+
+# relative to target/*/
+APP_PATH = ../../apps/RcTest
+
+APP_CHEADERS = 
+
+APP_CSOURCES = \
+	$(APP_PATH)/main.c
+
+APP_CXXHEADERS = 
+
+APP_CXXSOURCES = 
+
+
+APP_LIBS = 
+
+APP_INCLUDES = \
+	-I$(APP_PATH)
+
+APP_DEFINES = 
+
+
+APP_COBJECTS = $(APP_CSOURCES:.c=.o)
+
+APP_CXXOBJECTS = $(APP_CXXSOURCES:.cpp=.o)
+
+

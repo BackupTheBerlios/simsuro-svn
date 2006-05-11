@@ -1,0 +1,11 @@
+#
+# Makefile for Asuro
+# (will be included by avr/Makefile and unix/Makefile)
+#
+
+# relative to target/*/
+include ../../apps/test/make.in
+#include ../../apps/RcTest/make.in
+#include ../../apps/FirstTry/make.in
+#include ../../apps/SelfTest/make.in
+

@@ -1,0 +1,45 @@
+#
+# Makefile for Asuro
+# (will be included by Makefile.avr and Makefile.unix)
+#
+
+APP_PATH = apps/SelfTest
+
+APP_CHEADERS = \
+	$(APP_PATH)/asuro.h \
+	$(APP_PATH)/Test.h \
+	$(APP_PATH)/SelfTest.h \
+	$(APP_PATH)/Demo.h \
+	$(APP_PATH)/LineDemo.h \
+	$(APP_PATH)/RechteckDemo.h \
+	$(APP_PATH)/PCDemo.h \
+	$(APP_PATH)/IRDemo.h
+
+APP_CSOURCES = \
+	$(APP_PATH)/asuro.c \
+	$(APP_PATH)/main.c \
+	$(APP_PATH)/Test.c \
+	$(APP_PATH)/SelfTest.c \
+	$(APP_PATH)/Demo.c \
+	$(APP_PATH)/LineDemo.c \
+	$(APP_PATH)/RechteckDemo.c \
+	$(APP_PATH)/PCDemo.c \
+	$(APP_PATH)/IRDemo.c
+
+APP_CXXHEADERS = 
+
+APP_CXXSOURCES = 
+
+
+APP_LIBS = 
+
+APP_INCLUDES = \
+	-I.
+
+APP_DEFINES = 
+
+
+APP_COBJECTS = $(APP_CSOURCES:.c=.o)
+
+APP_CXXOBJECTS = $(APP_CXXSOURCES:.cpp=.o)
+

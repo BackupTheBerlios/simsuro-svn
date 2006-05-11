@@ -1,0 +1,1432 @@
+GAS LISTING /tmp/ccn0jEfz.s 			page 1
+
+
+   1               		.file	"asuro_avr.c"
+   2               		.arch atmega8
+   3               	__SREG__ = 0x3f
+   4               	__SP_H__ = 0x3e
+   5               	__SP_L__ = 0x3d
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/home/denis/devel/simsuro/target/avr/",100,0,0,.Ltext0
+  11               		.stabs	"asuro_avr.c",100,0,0,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  16               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,0,0
+  17               		.stabs	"long int:t(0,3)=@s32;r(0,3);0020000000000;0017777777777;",128,0,0,0
+  18               		.stabs	"unsigned int:t(0,4)=r(0,4);0000000000000;0000000177777;",128,0,0,0
+  19               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0000000000000;0037777777777;",128,0,0,0
+  20               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  21               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0000000000000;01777777777777777777777;",128,0,0,
+  22               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  23               		.stabs	"short unsigned int:t(0,9)=r(0,9);0000000000000;0000000177777;",128,0,0,0
+  24               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  25               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  26               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"complex int:t(0,15)=s4real:(0,1),0,16;imag:(0,1),16,16;;",128,0,0,0
+  30               		.stabs	"complex float:t(0,16)=R3;8;0;",128,0,0,0
+  31               		.stabs	"complex double:t(0,17)=R3;8;0;",128,0,0,0
+  32               		.stabs	"complex long double:t(0,18)=R3;8;0;",128,0,0,0
+  33               		.stabs	"__builtin_va_list:t(0,19)=*(0,20)=(0,20)",128,0,0,0
+  34               		.stabs	"_Bool:t(0,21)=@s8;-16;",128,0,0,0
+  35               		.stabs	"asuro_avr.c",130,0,0,0
+  36               		.stabs	"../../include/asuro.h",130,0,0,0
+  37               		.stabs	"asuro_avr.h",130,0,0,0
+  38               		.stabs	"/usr/avr/include/avr/io.h",130,0,0,0
+  39               		.stabs	"/usr/avr/include/avr/sfr_defs.h",130,0,0,0
+  40               		.stabn	162,0,0,0
+  41               		.stabs	"/usr/avr/include/avr/iom8.h",130,0,0,0
+  42               		.stabn	162,0,0,0
+  43               		.stabn	162,0,0,0
+  44               		.stabs	"/usr/avr/include/avr/interrupt.h",130,0,0,0
+  45               		.stabn	162,0,0,0
+  46               		.stabs	"/usr/avr/include/avr/signal.h",130,0,0,0
+  47               		.stabn	162,0,0,0
+  48               		.stabn	162,0,0,0
+  49               		.stabs	"../../include/asuro_defs.h",130,0,0,0
+  50               		.stabn	162,0,0,0
+  51               		.stabs	"AS_UserIsr:t(2,1)=(2,2)=*(2,3)=f(0,20)",128,0,37,0
+  52               		.stabn	162,0,0,0
+  53               		.stabs	"../../include/asuro_irrc5.h",130,0,0,0
+  54               		.stabs	"asuro_avr_irrc5.h",130,0,0,0
+  55               		.stabn	162,0,0,0
+  56               		.stabn	162,0,0,0
+  57               	.global	AS_UserIsrInterrupt1
+GAS LISTING /tmp/ccn0jEfz.s 			page 2
+
+
+  58               	.global	AS_UserIsrInterrupt1
+  59               		.section .bss
+  60               		.type	AS_UserIsrInterrupt1, @object
+  61               		.size	AS_UserIsrInterrupt1, 2
+  62               	AS_UserIsrInterrupt1:
+  63 0000 0000      		.skip 2,0
+  64               	.global	AS_count36kHz
+  65               	.global	AS_count36kHz
+  66               		.type	AS_count36kHz, @object
+  67               		.size	AS_count36kHz, 1
+  68               	AS_count36kHz:
+  69 0002 00        		.skip 1,0
+  70               	.global	AS_clockTicks
+  71               	.global	AS_clockTicks
+  72               		.type	AS_clockTicks, @object
+  73               		.size	AS_clockTicks, 4
+  74               	AS_clockTicks:
+  75 0003 0000 0000 		.skip 4,0
+  76               	.global	AS_irrc5DecodeEnabled
+  77               		.data
+  78               		.type	AS_irrc5DecodeEnabled, @object
+  79               		.size	AS_irrc5DecodeEnabled, 1
+  80               	AS_irrc5DecodeEnabled:
+  81 0000 01        		.byte	1
+  82               	.global	AS_sensSwitchesOn
+  83               	.global	AS_sensSwitchesOn
+  84               		.section .bss
+  85               		.type	AS_sensSwitchesOn, @object
+  86               		.size	AS_sensSwitchesOn, 1
+  87               	AS_sensSwitchesOn:
+  88 0007 00        		.skip 1,0
+  89               	.global	AS_sensSwitched
+  90               	.global	AS_sensSwitched
+  91               		.type	AS_sensSwitched, @object
+  92               		.size	AS_sensSwitched, 1
+  93               	AS_sensSwitched:
+  94 0008 00        		.skip 1,0
+  95               		.text
+  96               		.stabs	"__vector_4:F(0,20)",36,0,66,__vector_4
+  97               	.global	__vector_4
+  98               		.type	__vector_4, @function
+  99               	__vector_4:
+   1:asuro_avr.c   **** /** @file 
+   2:asuro_avr.c   ****  * 
+   3:asuro_avr.c   ****  * AVR dependent part of interface to ASURO's devices
+   4:asuro_avr.c   ****  * 
+   5:asuro_avr.c   ****  * @author Denis Martin
+   6:asuro_avr.c   ****  * 
+   7:asuro_avr.c   ****  * This program is free software; you can redistribute it and/or modify it under
+   8:asuro_avr.c   ****  * the terms of the GNU General Public License as published by the Free Software
+   9:asuro_avr.c   ****  * Foundation; either version 2 of the License, or (at your option) any later
+  10:asuro_avr.c   ****  * version.
+  11:asuro_avr.c   ****  * This program is distributed in the hope that it will be useful, but WITHOUT
+  12:asuro_avr.c   ****  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  13:asuro_avr.c   ****  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+  14:asuro_avr.c   ****  * details. You should have received a copy of the GNU General Public License
+  15:asuro_avr.c   ****  * along with this program; if not, write to the Free Software Foundation, Inc.,
+GAS LISTING /tmp/ccn0jEfz.s 			page 3
+
+
+  16:asuro_avr.c   ****  * 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+  17:asuro_avr.c   ****  */
+  18:asuro_avr.c   **** 
+  19:asuro_avr.c   **** #include "asuro.h"
+  20:asuro_avr.c   **** #include "asuro_irrc5.h"
+  21:asuro_avr.c   **** 
+  22:asuro_avr.c   **** /**
+  23:asuro_avr.c   ****  * User ISR for INT1 (switches).
+  24:asuro_avr.c   ****  */
+  25:asuro_avr.c   **** volatile AS_UserIsr AS_UserIsrInterrupt1 = 0;
+  26:asuro_avr.c   **** 
+  27:asuro_avr.c   **** /**
+  28:asuro_avr.c   ****  * Intermediate counter for system clock ticks. Don't read it directly, but 
+  29:asuro_avr.c   ****  * use AS_GetClockTicks() or AS_GetSysTime() instead.
+  30:asuro_avr.c   ****  */
+  31:asuro_avr.c   **** volatile unsigned char AS_count36kHz = 0;
+  32:asuro_avr.c   **** 
+  33:asuro_avr.c   **** /**
+  34:asuro_avr.c   ****  * Counter for system clock ticks. Don't read it directly, but use 
+  35:asuro_avr.c   ****  * AS_GetClockTicks() or AS_GetSysTime() instead.
+  36:asuro_avr.c   ****  */
+  37:asuro_avr.c   **** volatile unsigned long AS_clockTicks = 0;
+  38:asuro_avr.c   **** 
+  39:asuro_avr.c   **** /**
+  40:asuro_avr.c   ****  * Enable/disable IR-RC5 decoding in ISR. Will be disabled during read/write on
+  41:asuro_avr.c   ****  * IR serial interface.
+  42:asuro_avr.c   ****  */
+  43:asuro_avr.c   **** volatile unsigned char AS_irrc5DecodeEnabled = 1;
+  44:asuro_avr.c   **** 
+  45:asuro_avr.c   **** /**
+  46:asuro_avr.c   ****  * Set to true if the interrupt for switches is enabled. If it is not enabled,
+  47:asuro_avr.c   ****  * you may activate it by using AS_SensSwitchesInterruptOn().
+  48:asuro_avr.c   ****  */
+  49:asuro_avr.c   **** volatile char AS_sensSwitchesOn = 0;
+  50:asuro_avr.c   **** 
+  51:asuro_avr.c   **** /**
+  52:asuro_avr.c   ****  * Set to true, when one or more of the switches are pressed. Note that you
+  53:asuro_avr.c   ****  * have to turn on the concerned interrupt using AS_SensSwitchesInterruptOn().
+  54:asuro_avr.c   ****  */
+  55:asuro_avr.c   **** volatile char AS_sensSwitched = 0;
+  56:asuro_avr.c   **** 
+  57:asuro_avr.c   **** /** @name Interrupt handlers **************************************************/
+  58:asuro_avr.c   **** //@{
+  59:asuro_avr.c   **** 
+  60:asuro_avr.c   **** /**
+  61:asuro_avr.c   ****  * ISR for timer2 overflow. timer2 is used as a 72kHz counter for IR 
+  62:asuro_avr.c   ****  * communication. While the signal SIG_OUTPUT_COMPARE2 would be triggered every 
+  63:asuro_avr.c   ****  * 1/72k seconds, this ISR is called only every 1/36k seconds.
+  64:asuro_avr.c   ****  */
+  65:asuro_avr.c   **** SIGNAL(SIG_OVERFLOW2)
+  66:asuro_avr.c   **** {
+ 100               		.stabn 68,0,66,.LM1-__vector_4
+ 101               	.LM1:
+ 102               	/* prologue: frame size=0 */
+ 103 0000 1F92      		push __zero_reg__
+ 104 0002 0F92      		push __tmp_reg__
+ 105 0004 0FB6      		in __tmp_reg__,__SREG__
+GAS LISTING /tmp/ccn0jEfz.s 			page 4
+
+
+ 106 0006 0F92      		push __tmp_reg__
+ 107 0008 1124      		clr __zero_reg__
+ 108 000a 2F93      		push r18
+ 109 000c 3F93      		push r19
+ 110 000e 4F93      		push r20
+ 111 0010 5F93      		push r21
+ 112 0012 6F93      		push r22
+ 113 0014 7F93      		push r23
+ 114 0016 8F93      		push r24
+ 115 0018 9F93      		push r25
+ 116 001a AF93      		push r26
+ 117 001c BF93      		push r27
+ 118 001e EF93      		push r30
+ 119 0020 FF93      		push r31
+ 120               	/* prologue end (size=17) */
+  67:asuro_avr.c   **** 	TCNT2 += 0x25; 	// next compare match in (0x91 - 0x25) = 0x6C 8MHz ticks
+ 121               		.stabn 68,0,67,.LM2-__vector_4
+ 122               	.LM2:
+ 123 0022 84B5      		in r24,68-0x20
+ 124 0024 8B5D      		subi r24,lo8(-(37))
+ 125 0026 84BD      		out 68-0x20,r24
+  68:asuro_avr.c   **** 					// this causes the compare match to occur every 1/72kHz seconds
+  69:asuro_avr.c   **** 					// (needed for IR modulation)
+  70:asuro_avr.c   **** 	
+  71:asuro_avr.c   **** 	AS_count36kHz++;
+ 126               		.stabn 68,0,71,.LM3-__vector_4
+ 127               	.LM3:
+ 128 0028 8091 0000 		lds r24,AS_count36kHz
+ 129 002c 8F5F      		subi r24,lo8(-(1))
+ 130 002e 8093 0000 		sts AS_count36kHz,r24
+  72:asuro_avr.c   **** 	if (!AS_count36kHz) AS_clockTicks++; // count overflows
+ 131               		.stabn 68,0,72,.LM4-__vector_4
+ 132               	.LM4:
+ 133 0032 8091 0000 		lds r24,AS_count36kHz
+ 134 0036 8823      		tst r24
+ 135 0038 99F4      		brne .L2
+ 136 003a 8091 0000 		lds r24,AS_clockTicks
+ 137 003e 9091 0000 		lds r25,(AS_clockTicks)+1
+ 138 0042 A091 0000 		lds r26,(AS_clockTicks)+2
+ 139 0046 B091 0000 		lds r27,(AS_clockTicks)+3
+ 140 004a 0196      		adiw r24,1
+ 141 004c A11D      		adc r26,__zero_reg__
+ 142 004e B11D      		adc r27,__zero_reg__
+ 143 0050 8093 0000 		sts AS_clockTicks,r24
+ 144 0054 9093 0000 		sts (AS_clockTicks)+1,r25
+ 145 0058 A093 0000 		sts (AS_clockTicks)+2,r26
+ 146 005c B093 0000 		sts (AS_clockTicks)+3,r27
+ 147               	.L2:
+  73:asuro_avr.c   **** 	
+  74:asuro_avr.c   **** 	if (AS_irrc5DecodeEnabled && !(AS_count36kHz % 8)) 
+ 148               		.stabn 68,0,74,.LM5-__vector_4
+ 149               	.LM5:
+ 150 0060 8091 0000 		lds r24,AS_irrc5DecodeEnabled
+ 151 0064 8823      		tst r24
+ 152 0066 29F0      		breq .L1
+ 153 0068 8091 0000 		lds r24,AS_count36kHz
+ 154 006c 8770      		andi r24,lo8(7)
+GAS LISTING /tmp/ccn0jEfz.s 			page 5
+
+
+ 155 006e 09F4      		brne .L1
+  75:asuro_avr.c   **** 		AS_isr_irrc5(); // called about every 222.2us
+ 156               		.stabn 68,0,75,.LM6-__vector_4
+ 157               	.LM6:
+ 158 0070 00D0      		rcall AS_isr_irrc5
+  76:asuro_avr.c   **** 	
+  77:asuro_avr.c   **** }
+ 159               		.stabn 68,0,77,.LM7-__vector_4
+ 160               	.LM7:
+ 161               	.L1:
+ 162               	/* epilogue: frame size=0 */
+ 163 0072 FF91      		pop r31
+ 164 0074 EF91      		pop r30
+ 165 0076 BF91      		pop r27
+ 166 0078 AF91      		pop r26
+ 167 007a 9F91      		pop r25
+ 168 007c 8F91      		pop r24
+ 169 007e 7F91      		pop r23
+ 170 0080 6F91      		pop r22
+ 171 0082 5F91      		pop r21
+ 172 0084 4F91      		pop r20
+ 173 0086 3F91      		pop r19
+ 174 0088 2F91      		pop r18
+ 175 008a 0F90      		pop __tmp_reg__
+ 176 008c 0FBE      		out __SREG__,__tmp_reg__
+ 177 008e 0F90      		pop __tmp_reg__
+ 178 0090 1F90      		pop __zero_reg__
+ 179 0092 1895      		reti
+ 180               	/* epilogue end (size=17) */
+ 181               	/* function __vector_4 size 75 (41) */
+ 182               		.size	__vector_4, .-__vector_4
+ 183               	.Lscope0:
+ 184               		.stabs	"",36,0,0,.Lscope0-__vector_4
+ 185               		.stabs	"__vector_2:F(0,20)",36,0,84,__vector_2
+ 186               	.global	__vector_2
+ 187               		.type	__vector_2, @function
+ 188               	__vector_2:
+  78:asuro_avr.c   **** 
+  79:asuro_avr.c   **** /**
+  80:asuro_avr.c   ****  * ISR for switches. The interrupt is disabled here, so you have to reactivate
+  81:asuro_avr.c   ****  * it manually using AS_SensSwitchesInterruptOn().
+  82:asuro_avr.c   ****  */
+  83:asuro_avr.c   **** SIGNAL(SIG_INTERRUPT1)
+  84:asuro_avr.c   **** {
+ 189               		.stabn 68,0,84,.LM8-__vector_2
+ 190               	.LM8:
+ 191               	/* prologue: frame size=0 */
+ 192 0094 1F92      		push __zero_reg__
+ 193 0096 0F92      		push __tmp_reg__
+ 194 0098 0FB6      		in __tmp_reg__,__SREG__
+ 195 009a 0F92      		push __tmp_reg__
+ 196 009c 1124      		clr __zero_reg__
+ 197 009e 2F93      		push r18
+ 198 00a0 3F93      		push r19
+ 199 00a2 4F93      		push r20
+ 200 00a4 5F93      		push r21
+ 201 00a6 6F93      		push r22
+GAS LISTING /tmp/ccn0jEfz.s 			page 6
+
+
+ 202 00a8 7F93      		push r23
+ 203 00aa 8F93      		push r24
+ 204 00ac 9F93      		push r25
+ 205 00ae AF93      		push r26
+ 206 00b0 BF93      		push r27
+ 207 00b2 EF93      		push r30
+ 208 00b4 FF93      		push r31
+ 209               	/* prologue end (size=17) */
+  85:asuro_avr.c   **** 	AS_sensSwitched = 1;
+ 210               		.stabn 68,0,85,.LM9-__vector_2
+ 211               	.LM9:
+ 212 00b6 81E0      		ldi r24,lo8(1)
+ 213 00b8 8093 0000 		sts AS_sensSwitched,r24
+  86:asuro_avr.c   **** 	AS_SensSwitchesInterruptOff();
+ 214               		.stabn 68,0,86,.LM10-__vector_2
+ 215               	.LM10:
+ 216 00bc 55D0      		rcall AS_SensSwitchesInterruptOff
+  87:asuro_avr.c   **** 	
+  88:asuro_avr.c   **** 	// call user ISR
+  89:asuro_avr.c   **** 	if (AS_UserIsrInterrupt1 != 0) AS_UserIsrInterrupt1();
+ 217               		.stabn 68,0,89,.LM11-__vector_2
+ 218               	.LM11:
+ 219 00be 8091 0000 		lds r24,AS_UserIsrInterrupt1
+ 220 00c2 9091 0000 		lds r25,(AS_UserIsrInterrupt1)+1
+ 221 00c6 892B      		or r24,r25
+ 222 00c8 29F0      		breq .L4
+ 223 00ca E091 0000 		lds r30,AS_UserIsrInterrupt1
+ 224 00ce F091 0000 		lds r31,(AS_UserIsrInterrupt1)+1
+ 225 00d2 0995      		icall
+  90:asuro_avr.c   **** }
+ 226               		.stabn 68,0,90,.LM12-__vector_2
+ 227               	.LM12:
+ 228               	.L4:
+ 229               	/* epilogue: frame size=0 */
+ 230 00d4 FF91      		pop r31
+ 231 00d6 EF91      		pop r30
+ 232 00d8 BF91      		pop r27
+ 233 00da AF91      		pop r26
+ 234 00dc 9F91      		pop r25
+ 235 00de 8F91      		pop r24
+ 236 00e0 7F91      		pop r23
+ 237 00e2 6F91      		pop r22
+ 238 00e4 5F91      		pop r21
+ 239 00e6 4F91      		pop r20
+ 240 00e8 3F91      		pop r19
+ 241 00ea 2F91      		pop r18
+ 242 00ec 0F90      		pop __tmp_reg__
+ 243 00ee 0FBE      		out __SREG__,__tmp_reg__
+ 244 00f0 0F90      		pop __tmp_reg__
+ 245 00f2 1F90      		pop __zero_reg__
+ 246 00f4 1895      		reti
+ 247               	/* epilogue end (size=17) */
+ 248               	/* function __vector_2 size 49 (15) */
+ 249               		.size	__vector_2, .-__vector_2
+ 250               	.Lscope1:
+ 251               		.stabs	"",36,0,0,.Lscope1-__vector_2
+ 252               		.stabs	"AS_Sleep:F(0,20)",36,0,182,AS_Sleep
+GAS LISTING /tmp/ccn0jEfz.s 			page 7
+
+
+ 253               		.stabs	"time:P(0,4)",64,0,181,18
+ 254               	.global	AS_Sleep
+ 255               		.type	AS_Sleep, @function
+ 256               	AS_Sleep:
+  91:asuro_avr.c   **** 
+  92:asuro_avr.c   **** //@}
+  93:asuro_avr.c   **** 
+  94:asuro_avr.c   **** /** @name Functions ***********************************************************/
+  95:asuro_avr.c   **** //@{
+  96:asuro_avr.c   **** 
+  97:asuro_avr.c   **** /**
+  98:asuro_avr.c   ****  * Halt execution for a given time of 36kHz ticks.
+  99:asuro_avr.c   ****  * 
+ 100:asuro_avr.c   ****  * @param ticks	Time to sleep in 36kHz ticks (0..255)
+ 101:asuro_avr.c   ****  */
+ 102:asuro_avr.c   **** inline void AS_Avr_Sleep(unsigned char ticks)
+ 103:asuro_avr.c   **** {
+ 104:asuro_avr.c   **** 	unsigned char tick = AS_count36kHz + ticks;
+ 105:asuro_avr.c   **** 	while (tick != AS_count36kHz);
+ 106:asuro_avr.c   **** }
+ 107:asuro_avr.c   **** 
+ 108:asuro_avr.c   **** /**
+ 109:asuro_avr.c   ****  * Do some initialization stuff.
+ 110:asuro_avr.c   ****  */
+ 111:asuro_avr.c   **** inline void AS_Init()
+ 112:asuro_avr.c   **** {
+ 113:asuro_avr.c   **** 	// serial interface programmed in boot routine and already running
+ 114:asuro_avr.c   **** 	
+ 115:asuro_avr.c   **** 	// prepare 72kHz oscillator for IR communication
+ 116:asuro_avr.c   **** 	TCCR2 = (1 << WGM20) | (1 << WGM21) | (1 << COM20) | (1 << COM21) | (1 << CS20);
+ 117:asuro_avr.c   **** 	OCR2  = 0x91; // (0xFF - 0x91) = 0x6E = 8MHz/72kHz (oscillator freq. divided by 2x IR modulation f
+ 118:asuro_avr.c   **** 	TIMSK |= (1 << TOIE2); // unmask timer2/overflow interrupt
+ 119:asuro_avr.c   **** 	
+ 120:asuro_avr.c   **** 	// set RS232 communication parameters
+ 121:asuro_avr.c   **** 	UCSRA = 0x00;
+ 122:asuro_avr.c   **** 	UCSRB = 0x00;
+ 123:asuro_avr.c   **** 	UCSRC = 0x86; // no parity | 1 stop bit | 8 data bits
+ 124:asuro_avr.c   **** 	UBRRL = 0xCF; // 2400bps @ 8.00MHz
+ 125:asuro_avr.c   **** 	
+ 126:asuro_avr.c   **** 	// set output ports
+ 127:asuro_avr.c   **** 	DDRB = AS_DIR_FWD | AS_DIR_RWD | AS_PB_MTR_PWM | AS_PB_LED_IRTX | AS_PB_LED_GREEN;
+ 128:asuro_avr.c   **** 	DDRD = AS_DIR_FWD | AS_DIR_RWD | AS_PD_LED_FRONT | AS_PD_LED_ODO | AS_PD_LED_RED;
+ 129:asuro_avr.c   **** 	
+ 130:asuro_avr.c   **** 	// for PWM (8-Bit PWM) on OC1A & OC1B
+ 131:asuro_avr.c   **** 	TCCR1A = (1 << WGM10) | (1 << COM1A1) | (1 << COM1B1);
+ 132:asuro_avr.c   **** 	// tmr1 running on MCU clock/8 
+ 133:asuro_avr.c   **** 	TCCR1B = (1 << CS11);
+ 134:asuro_avr.c   **** 	
+ 135:asuro_avr.c   **** 	// A/D Conversion
+ 136:asuro_avr.c   **** 	ADCSRA = (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1); // clk/64 
+ 137:asuro_avr.c   **** 	
+ 138:asuro_avr.c   **** 	AS_BACK_LED_MODE;
+ 139:asuro_avr.c   **** 	AS_LED_LBACK_ON; AS_LED_RBACK_ON;
+ 140:asuro_avr.c   **** 	AS_LED_LBACK_OFF; AS_LED_RBACK_OFF;	
+ 141:asuro_avr.c   **** 	AS_LED_ODO_OFF;
+ 142:asuro_avr.c   **** 	AS_LED_FRONT_OFF;
+ 143:asuro_avr.c   **** 	AS_LED_GREEN_OFF;
+GAS LISTING /tmp/ccn0jEfz.s 			page 8
+
+
+ 144:asuro_avr.c   **** 	AS_LED_RED_OFF;
+ 145:asuro_avr.c   **** 	
+ 146:asuro_avr.c   **** 	AS_MotorDir(AS_DIR_FWD, AS_DIR_FWD);
+ 147:asuro_avr.c   **** 	AS_MotorSpeed(0,0);
+ 148:asuro_avr.c   **** 	AS_LED_GREEN_ON;
+ 149:asuro_avr.c   **** 	sei();
+ 150:asuro_avr.c   **** }
+ 151:asuro_avr.c   **** 
+ 152:asuro_avr.c   **** /**
+ 153:asuro_avr.c   ****  * Return the number of system clock ticks elapsed since system start. Remember
+ 154:asuro_avr.c   ****  * that it might overflow.
+ 155:asuro_avr.c   ****  * 
+ 156:asuro_avr.c   ****  * @return Number of system clock ticks
+ 157:asuro_avr.c   ****  */
+ 158:asuro_avr.c   **** inline unsigned long AS_GetClockTicks()
+ 159:asuro_avr.c   **** {
+ 160:asuro_avr.c   **** 	return (AS_clockTicks<<8) + AS_count36kHz;
+ 161:asuro_avr.c   **** }
+ 162:asuro_avr.c   **** 
+ 163:asuro_avr.c   **** /**
+ 164:asuro_avr.c   ****  * Return the time in milliseconds elapsed since system start. Remember that it
+ 165:asuro_avr.c   ****  * might overflow.
+ 166:asuro_avr.c   ****  * 
+ 167:asuro_avr.c   ****  * @return System time in milliseconds
+ 168:asuro_avr.c   ****  */
+ 169:asuro_avr.c   **** inline unsigned long AS_GetSysTime()
+ 170:asuro_avr.c   **** {
+ 171:asuro_avr.c   **** 	return ((AS_clockTicks/36)<<8) + AS_count36kHz/36;
+ 172:asuro_avr.c   **** }
+ 173:asuro_avr.c   **** 
+ 174:asuro_avr.c   **** /**
+ 175:asuro_avr.c   ****  * Halt execution for a given time. Note: a value of zero will not return 
+ 176:asuro_avr.c   ****  * immediately as you might expect. Instead, the execution is halted for
+ 177:asuro_avr.c   ****  * over a minute!
+ 178:asuro_avr.c   ****  * 
+ 179:asuro_avr.c   ****  * @param time	Time to sleep in milliseconds
+ 180:asuro_avr.c   ****  */
+ 181:asuro_avr.c   **** void AS_Sleep(unsigned int time)
+ 182:asuro_avr.c   **** {
+ 257               		.stabn 68,0,182,.LM13-AS_Sleep
+ 258               	.LM13:
+ 259               	/* prologue: frame size=0 */
+ 260               	/* prologue end (size=0) */
+ 261 00f6 9C01      		movw r18,r24
+ 262               	.L7:
+ 183:asuro_avr.c   **** 	do {
+ 184:asuro_avr.c   **** 		unsigned char tick = AS_count36kHz + 36;
+ 263               		.stabn 68,0,184,.LM14-AS_Sleep
+ 264               	.LM14:
+ 265               	.LBB2:
+ 266               	.LBB3:
+ 267 00f8 9091 0000 		lds r25,AS_count36kHz
+ 268 00fc 9C5D      		subi r25,lo8(-(36))
+ 185:asuro_avr.c   **** 		while (tick != AS_count36kHz);
+ 269               		.stabn 68,0,185,.LM15-AS_Sleep
+ 270               	.LM15:
+ 271               	.L10:
+GAS LISTING /tmp/ccn0jEfz.s 			page 9
+
+
+ 272 00fe 8091 0000 		lds r24,AS_count36kHz
+ 273 0102 9817      		cp r25,r24
+ 274 0104 E1F7      		brne .L10
+ 186:asuro_avr.c   **** 		time--;
+ 275               		.stabn 68,0,186,.LM16-AS_Sleep
+ 276               	.LM16:
+ 277 0106 2150      		subi r18,lo8(-(-1))
+ 278 0108 3040      		sbci r19,hi8(-(-1))
+ 187:asuro_avr.c   **** 	} while (time);
+ 279               		.stabn 68,0,187,.LM17-AS_Sleep
+ 280               	.LM17:
+ 281               	.LBE3:
+ 282 010a B1F7      		brne .L7
+ 188:asuro_avr.c   **** }
+ 283               		.stabn 68,0,188,.LM18-AS_Sleep
+ 284               	.LM18:
+ 285               	.LBE2:
+ 286               	/* epilogue: frame size=0 */
+ 287 010c 0895      		ret
+ 288               	/* epilogue end (size=1) */
+ 289               	/* function AS_Sleep size 14 (13) */
+ 290               		.size	AS_Sleep, .-AS_Sleep
+ 291               		.stabs	"tick:r(0,11)",64,0,184,25
+ 292               		.stabn	192,0,0,.LBB3-AS_Sleep
+ 293               		.stabn	224,0,0,.LBE3-AS_Sleep
+ 294               	.Lscope2:
+ 295               		.stabs	"",36,0,0,.Lscope2-AS_Sleep
+ 296               		.stabs	"AS_SerWrite:F(0,20)",36,0,269,AS_SerWrite
+ 297               		.stabs	"data:P(1,1)=*(0,11)",64,0,268,20
+ 298               		.stabs	"length:P(0,11)",64,0,268,22
+ 299               	.global	AS_SerWrite
+ 300               		.type	AS_SerWrite, @function
+ 301               	AS_SerWrite:
+ 189:asuro_avr.c   **** 
+ 190:asuro_avr.c   **** /**
+ 191:asuro_avr.c   ****  * Set status LED to the specified color. Note that you can also call 
+ 192:asuro_avr.c   ****  * AS_LED_GREEN_ON, AS_LED_GREEN_OFF, AS_LED_RED_ON, AS_LED_RED_OFF, 
+ 193:asuro_avr.c   ****  * AS_LED_YELLOW_ON and AS_LED_YELLOW_OFF directly.
+ 194:asuro_avr.c   ****  * 
+ 195:asuro_avr.c   ****  * @params color	Color (possible values: AS_GREEN, AS_RED, AS_YELLOW)
+ 196:asuro_avr.c   ****  */
+ 197:asuro_avr.c   **** inline void AS_StatusLED(unsigned char color)
+ 198:asuro_avr.c   **** {
+ 199:asuro_avr.c   **** 	if (color & AS_GREEN) AS_LED_GREEN_ON; else AS_LED_GREEN_OFF;
+ 200:asuro_avr.c   **** 	if (color & AS_RED)   AS_LED_RED_ON;   else AS_LED_RED_OFF;
+ 201:asuro_avr.c   **** }
+ 202:asuro_avr.c   **** 
+ 203:asuro_avr.c   **** /**
+ 204:asuro_avr.c   ****  * Set front LED on or off. Note that you can also call AS_LED_FRONT_ON and 
+ 205:asuro_avr.c   ****  * AS_LED_FRONT_OFF directly.
+ 206:asuro_avr.c   ****  * 
+ 207:asuro_avr.c   ****  * @param status	AS_ON or AS_OFF
+ 208:asuro_avr.c   ****  */
+ 209:asuro_avr.c   **** inline void AS_FrontLED(unsigned char status)
+ 210:asuro_avr.c   **** {
+ 211:asuro_avr.c   **** 	if (status) AS_LED_FRONT_ON; else AS_LED_FRONT_OFF;
+ 212:asuro_avr.c   **** }
+GAS LISTING /tmp/ccn0jEfz.s 			page 10
+
+
+ 213:asuro_avr.c   **** 
+ 214:asuro_avr.c   **** /**
+ 215:asuro_avr.c   ****  * Set back LEDs on or off. Note that you can also call AS_LED_RBACK_ON, 
+ 216:asuro_avr.c   ****  * AS_LED_RBACK_OFF, AS_LED_LBACK_ON and AS_LED_LBACK_OFF directly, but you have
+ 217:asuro_avr.c   ****  * to switch to AS_BACK_LED_MODE before.
+ 218:asuro_avr.c   ****  * 
+ 219:asuro_avr.c   ****  * @params left		Status for left back LED (AS_ON or AS_OFF)
+ 220:asuro_avr.c   ****  * @params right	Status for right back LED (AS_ON or AS_OFF)
+ 221:asuro_avr.c   ****  */
+ 222:asuro_avr.c   **** inline void AS_BackLED(unsigned char left, unsigned char right)
+ 223:asuro_avr.c   **** {
+ 224:asuro_avr.c   **** 	if (left || right) {
+ 225:asuro_avr.c   **** 		AS_LED_ODO_OFF;
+ 226:asuro_avr.c   **** 		AS_BACK_LED_MODE;
+ 227:asuro_avr.c   **** 		
+ 228:asuro_avr.c   **** 	}
+ 229:asuro_avr.c   **** 	
+ 230:asuro_avr.c   **** 	if (left)  AS_LED_LBACK_ON; else AS_LED_LBACK_OFF;
+ 231:asuro_avr.c   **** 	if (right) AS_LED_RBACK_ON; else AS_LED_RBACK_OFF;
+ 232:asuro_avr.c   **** }
+ 233:asuro_avr.c   **** 
+ 234:asuro_avr.c   **** /**
+ 235:asuro_avr.c   ****  * Set speed of left and right motor. Use AS_MotorDir() before to specifiy the
+ 236:asuro_avr.c   ****  * direction.
+ 237:asuro_avr.c   ****  * 
+ 238:asuro_avr.c   ****  * @param left_speed	Speed of left motor (0..255)
+ 239:asuro_avr.c   ****  * @param right_speed	Speed of right motor (0..255)
+ 240:asuro_avr.c   ****  */
+ 241:asuro_avr.c   **** inline void AS_MotorSpeed(unsigned char left_speed, unsigned char right_speed)
+ 242:asuro_avr.c   **** {
+ 243:asuro_avr.c   **** 	OCR1A = left_speed;
+ 244:asuro_avr.c   **** 	OCR1B = right_speed;
+ 245:asuro_avr.c   **** }
+ 246:asuro_avr.c   **** 
+ 247:asuro_avr.c   **** /**
+ 248:asuro_avr.c   ****  * Set rotation direction of left and right motor. Possible values are
+ 249:asuro_avr.c   ****  * AS_DIR_FWD (forward), AS_DIR_RWD (backward), AS_DIR_BREAK (stop) and
+ 250:asuro_avr.c   ****  * AS_DIR_FREE (no change to direction).
+ 251:asuro_avr.c   ****  * 
+ 252:asuro_avr.c   ****  * @param left_dir	Direction for left motor.
+ 253:asuro_avr.c   ****  * @param right_dir	Direction for right motor.
+ 254:asuro_avr.c   ****  */
+ 255:asuro_avr.c   **** inline void AS_MotorDir(unsigned char left_dir, unsigned char right_dir)
+ 256:asuro_avr.c   **** {
+ 257:asuro_avr.c   **** 	AS_DIR_LEFT(left_dir);
+ 258:asuro_avr.c   **** 	AS_DIR_RIGHT(right_dir);
+ 259:asuro_avr.c   **** }
+ 260:asuro_avr.c   **** 
+ 261:asuro_avr.c   **** /**
+ 262:asuro_avr.c   ****  * Send data via IR serial interface. IR-RC5 decoding will be disabled during
+ 263:asuro_avr.c   ****  * write.
+ 264:asuro_avr.c   ****  * 
+ 265:asuro_avr.c   ****  * @param data		Pointer to data buffer to send.
+ 266:asuro_avr.c   ****  * @param length	Size of data in bytes.
+ 267:asuro_avr.c   ****  */
+ 268:asuro_avr.c   **** void AS_SerWrite(unsigned char *data, unsigned char length)
+ 269:asuro_avr.c   **** {
+GAS LISTING /tmp/ccn0jEfz.s 			page 11
+
+
+ 302               		.stabn 68,0,269,.LM19-AS_SerWrite
+ 303               	.LM19:
+ 304               	/* prologue: frame size=0 */
+ 305               	/* prologue end (size=0) */
+ 306 010e AC01      		movw r20,r24
+ 270:asuro_avr.c   **** 	unsigned char i = 0;
+ 307               		.stabn 68,0,270,.LM20-AS_SerWrite
+ 308               	.LM20:
+ 309               	.LBB4:
+ 310 0110 20E0      		ldi r18,lo8(0)
+ 271:asuro_avr.c   **** 	unsigned char irrc5Decode = AS_irrc5DecodeEnabled;
+ 311               		.stabn 68,0,271,.LM21-AS_SerWrite
+ 312               	.LM21:
+ 313 0112 9091 0000 		lds r25,AS_irrc5DecodeEnabled
+ 272:asuro_avr.c   **** 	AS_irrc5DecodeEnabled = 0;
+ 314               		.stabn 68,0,272,.LM22-AS_SerWrite
+ 315               	.LM22:
+ 316 0116 2093 0000 		sts AS_irrc5DecodeEnabled,r18
+ 273:asuro_avr.c   **** 	
+ 274:asuro_avr.c   **** 	UCSRB = 0x08; // enable transmitter
+ 317               		.stabn 68,0,274,.LM23-AS_SerWrite
+ 318               	.LM23:
+ 319 011a 88E0      		ldi r24,lo8(8)
+ 320 011c 8AB9      		out 42-0x20,r24
+ 275:asuro_avr.c   **** 	while (length > 0) {
+ 321               		.stabn 68,0,275,.LM24-AS_SerWrite
+ 322               	.LM24:
+ 323 011e 6623      		tst r22
+ 324 0120 59F0      		breq .L20
+ 325               	.L19:
+ 276:asuro_avr.c   **** 		if (UCSRA & 0x20) { // wait for empty transmit buffer
+ 326               		.stabn 68,0,276,.LM25-AS_SerWrite
+ 327               	.LM25:
+ 328 0122 5D9B      		sbis 43-0x20,5
+ 329 0124 07C0      		rjmp .L15
+ 277:asuro_avr.c   **** 			UDR = data[i++];
+ 330               		.stabn 68,0,277,.LM26-AS_SerWrite
+ 331               	.LM26:
+ 332 0126 FA01      		movw r30,r20
+ 333 0128 E20F      		add r30,r18
+ 334 012a F11D      		adc r31,__zero_reg__
+ 335 012c 8081      		ld r24,Z
+ 336 012e 8CB9      		out 44-0x20,r24
+ 337 0130 2F5F      		subi r18,lo8(-(1))
+ 278:asuro_avr.c   **** 			length --;
+ 338               		.stabn 68,0,278,.LM27-AS_SerWrite
+ 339               	.LM27:
+ 340 0132 6150      		subi r22,lo8(-(-1))
+ 341               	.L15:
+ 342 0134 6623      		tst r22
+ 343 0136 A9F7      		brne .L19
+ 279:asuro_avr.c   **** 		}
+ 280:asuro_avr.c   **** 	}
+ 281:asuro_avr.c   **** 	while (!(UCSRA & 0x40)); 
+ 344               		.stabn 68,0,281,.LM28-AS_SerWrite
+ 345               	.LM28:
+ 346               	.L20:
+GAS LISTING /tmp/ccn0jEfz.s 			page 12
+
+
+ 347 0138 5E9B      		sbis 43-0x20,6
+ 348 013a FECF      		rjmp .L20
+ 282:asuro_avr.c   **** 	for (i = 0; i < 0xFE; i++)
+ 349               		.stabn 68,0,282,.LM29-AS_SerWrite
+ 350               	.LM29:
+ 351 013c 20E0      		ldi r18,lo8(0)
+ 352               	.L32:
+ 283:asuro_avr.c   **** 		for(length = 0; length < 0xFE; length++);
+ 353               		.stabn 68,0,283,.LM30-AS_SerWrite
+ 354               	.LM30:
+ 355 013e 60E0      		ldi r22,lo8(0)
+ 356               	.L31:
+ 357 0140 6E5F      		subi r22,lo8(-(2))
+ 358 0142 6E3F      		cpi r22,lo8(-2)
+ 359 0144 E8F3      		brlo .L31
+ 360               		.stabn 68,0,282,.LM31-AS_SerWrite
+ 361               	.LM31:
+ 362 0146 2F5F      		subi r18,lo8(-(1))
+ 363 0148 2E3F      		cpi r18,lo8(-2)
+ 364 014a C8F3      		brlo .L32
+ 284:asuro_avr.c   **** 		
+ 285:asuro_avr.c   **** 	AS_irrc5DecodeEnabled = irrc5Decode;
+ 365               		.stabn 68,0,285,.LM32-AS_SerWrite
+ 366               	.LM32:
+ 367 014c 9093 0000 		sts AS_irrc5DecodeEnabled,r25
+ 286:asuro_avr.c   **** }
+ 368               		.stabn 68,0,286,.LM33-AS_SerWrite
+ 369               	.LM33:
+ 370               	.LBE4:
+ 371               	/* epilogue: frame size=0 */
+ 372 0150 0895      		ret
+ 373               	/* epilogue end (size=1) */
+ 374               	/* function AS_SerWrite size 34 (33) */
+ 375               		.size	AS_SerWrite, .-AS_SerWrite
+ 376               		.stabs	"i:r(0,11)",64,0,270,18
+ 377               		.stabs	"irrc5Decode:r(0,11)",64,0,271,25
+ 378               		.stabn	192,0,0,.LBB4-AS_SerWrite
+ 379               		.stabn	224,0,0,.LBE4-AS_SerWrite
+ 380               	.Lscope3:
+ 381               		.stabs	"",36,0,0,.Lscope3-AS_SerWrite
+ 382               		.stabs	"AS_SensSwitchesInterruptOn:F(0,20)",36,0,293,AS_SensSwitchesInterruptOn
+ 383               	.global	AS_SensSwitchesInterruptOn
+ 384               		.type	AS_SensSwitchesInterruptOn, @function
+ 385               	AS_SensSwitchesInterruptOn:
+ 287:asuro_avr.c   **** 
+ 288:asuro_avr.c   **** /**
+ 289:asuro_avr.c   ****  * Turn on interrupt for activity on switches. The user ISR assigned to 
+ 290:asuro_avr.c   ****  * AS_UserIsrInterrupt1 will be called if any of the switches was pushed.
+ 291:asuro_avr.c   ****  */
+ 292:asuro_avr.c   **** void AS_SensSwitchesInterruptOn(void)
+ 293:asuro_avr.c   **** {
+ 386               		.stabn 68,0,293,.LM34-AS_SensSwitchesInterruptOn
+ 387               	.LM34:
+ 388               	/* prologue: frame size=0 */
+ 389               	/* prologue end (size=0) */
+ 294:asuro_avr.c   **** 	AS_sensSwitched = 0;
+ 390               		.stabn 68,0,294,.LM35-AS_SensSwitchesInterruptOn
+GAS LISTING /tmp/ccn0jEfz.s 			page 13
+
+
+ 391               	.LM35:
+ 392 0152 1092 0000 		sts AS_sensSwitched,__zero_reg__
+ 295:asuro_avr.c   **** 	AS_SENS_SWITCHES_OFF;
+ 393               		.stabn 68,0,295,.LM36-AS_SensSwitchesInterruptOn
+ 394               	.LM36:
+ 395 0156 9398      		cbi 50-0x20,3
+ 296:asuro_avr.c   **** 	DDRD &= ~AS_PD_SWITCHES; // switches as input
+ 396               		.stabn 68,0,296,.LM37-AS_SensSwitchesInterruptOn
+ 397               	.LM37:
+ 398 0158 8B98      		cbi 49-0x20,3
+ 297:asuro_avr.c   **** 	MCUCR &= ~((1 << ISC11) | (1 << ISC10)); // low level interrupt generation
+ 399               		.stabn 68,0,297,.LM38-AS_SensSwitchesInterruptOn
+ 400               	.LM38:
+ 401 015a 85B7      		in r24,85-0x20
+ 402 015c 837F      		andi r24,lo8(-13)
+ 403 015e 85BF      		out 85-0x20,r24
+ 298:asuro_avr.c   **** 	GICR |= (1 << INT1); // enable external interrupt 1
+ 404               		.stabn 68,0,298,.LM39-AS_SensSwitchesInterruptOn
+ 405               	.LM39:
+ 406 0160 8BB7      		in r24,91-0x20
+ 407 0162 8068      		ori r24,lo8(-128)
+ 408 0164 8BBF      		out 91-0x20,r24
+ 299:asuro_avr.c   **** }
+ 409               		.stabn 68,0,299,.LM40-AS_SensSwitchesInterruptOn
+ 410               	.LM40:
+ 411               	/* epilogue: frame size=0 */
+ 412 0166 0895      		ret
+ 413               	/* epilogue end (size=1) */
+ 414               	/* function AS_SensSwitchesInterruptOn size 11 (10) */
+ 415               		.size	AS_SensSwitchesInterruptOn, .-AS_SensSwitchesInterruptOn
+ 416               	.Lscope4:
+ 417               		.stabs	"",36,0,0,.Lscope4-AS_SensSwitchesInterruptOn
+ 418               		.stabs	"AS_SensSwitchesInterruptOff:F(0,20)",36,0,305,AS_SensSwitchesInterruptOff
+ 419               	.global	AS_SensSwitchesInterruptOff
+ 420               		.type	AS_SensSwitchesInterruptOff, @function
+ 421               	AS_SensSwitchesInterruptOff:
+ 300:asuro_avr.c   **** 
+ 301:asuro_avr.c   **** /**
+ 302:asuro_avr.c   ****  * Disable interrupt for activity on switches.
+ 303:asuro_avr.c   ****  */
+ 304:asuro_avr.c   **** inline void AS_SensSwitchesInterruptOff(void)
+ 305:asuro_avr.c   **** {
+ 422               		.stabn 68,0,305,.LM41-AS_SensSwitchesInterruptOff
+ 423               	.LM41:
+ 424               	/* prologue: frame size=0 */
+ 425               	/* prologue end (size=0) */
+ 306:asuro_avr.c   **** 	GICR &= ~(1 << INT1); // disable external interrupt 1
+ 426               		.stabn 68,0,306,.LM42-AS_SensSwitchesInterruptOff
+ 427               	.LM42:
+ 428 0168 8BB7      		in r24,91-0x20
+ 429 016a 8F77      		andi r24,lo8(127)
+ 430 016c 8BBF      		out 91-0x20,r24
+ 307:asuro_avr.c   **** }
+ 431               		.stabn 68,0,307,.LM43-AS_SensSwitchesInterruptOff
+ 432               	.LM43:
+ 433               	/* epilogue: frame size=0 */
+ 434 016e 0895      		ret
+GAS LISTING /tmp/ccn0jEfz.s 			page 14
+
+
+ 435               	/* epilogue end (size=1) */
+ 436               	/* function AS_SensSwitchesInterruptOff size 4 (3) */
+ 437               		.size	AS_SensSwitchesInterruptOff, .-AS_SensSwitchesInterruptOff
+ 438               	.Lscope5:
+ 439               		.stabs	"",36,0,0,.Lscope5-AS_SensSwitchesInterruptOff
+ 440               		.stabs	"AS_SensSwitchesRead:F(0,11)",36,0,324,AS_SensSwitchesRead
+ 441               	.global	AS_SensSwitchesRead
+ 442               		.type	AS_SensSwitchesRead, @function
+ 443               	AS_SensSwitchesRead:
+ 308:asuro_avr.c   **** 
+ 309:asuro_avr.c   **** /**
+ 310:asuro_avr.c   ****  * Read status of switches. The bits of the returned value represent the 
+ 311:asuro_avr.c   ****  * switches currently pressed. The mapping is the following:
+ 312:asuro_avr.c   ****  * 
+ 313:asuro_avr.c   ****  * bit0 = K6,
+ 314:asuro_avr.c   ****  * bit1 = K5,
+ 315:asuro_avr.c   ****  * bit2 = K4,
+ 316:asuro_avr.c   ****  * bit3 = K3,
+ 317:asuro_avr.c   ****  * bit4 = K2,
+ 318:asuro_avr.c   ****  * bit5 = K1
+ 319:asuro_avr.c   ****  * 
+ 320:asuro_avr.c   ****  * @return 	A value whose bits represent the switches currently pressed (see 
+ 321:asuro_avr.c   ****  * 			above)
+ 322:asuro_avr.c   ****  */
+ 323:asuro_avr.c   **** unsigned char AS_SensSwitchesRead(void)
+ 324:asuro_avr.c   **** {
+ 444               		.stabn 68,0,324,.LM44-AS_SensSwitchesRead
+ 445               	.LM44:
+ 446               	/* prologue: frame size=0 */
+ 447               	/* prologue end (size=0) */
+ 325:asuro_avr.c   **** 	unsigned int value;
+ 326:asuro_avr.c   **** 	
+ 327:asuro_avr.c   **** 	AS_SENS_SWITCHES_MODE;	// output for switches
+ 448               		.stabn 68,0,327,.LM45-AS_SensSwitchesRead
+ 449               	.LM45:
+ 450               	.LBB5:
+ 451 0170 8B9A      		sbi 49-0x20,3
+ 328:asuro_avr.c   **** 	AS_SENS_SWITCHES_ON;	// output 'high' for measurement
+ 452               		.stabn 68,0,328,.LM46-AS_SensSwitchesRead
+ 453               	.LM46:
+ 454 0172 939A      		sbi 50-0x20,3
+ 329:asuro_avr.c   **** 	
+ 330:asuro_avr.c   **** 	ADMUX = (1 << REFS0) | AS_MUX_SWITCHES;	// AVCC reference with external capacitor
+ 455               		.stabn 68,0,330,.LM47-AS_SensSwitchesRead
+ 456               	.LM47:
+ 457 0174 84E4      		ldi r24,lo8(68)
+ 458 0176 87B9      		out 39-0x20,r24
+ 459               		.stabn 68,0,104,.LM48-AS_SensSwitchesRead
+ 460               	.LM48:
+ 461               	.LBB6:
+ 462               	.LBB7:
+ 463 0178 9091 0000 		lds r25,AS_count36kHz
+ 464 017c 965F      		subi r25,lo8(-(10))
+ 465               		.stabn 68,0,105,.LM49-AS_SensSwitchesRead
+ 466               	.LM49:
+ 467               	.L45:
+ 468 017e 8091 0000 		lds r24,AS_count36kHz
+GAS LISTING /tmp/ccn0jEfz.s 			page 15
+
+
+ 469 0182 9817      		cp r25,r24
+ 470 0184 E1F7      		brne .L45
+ 331:asuro_avr.c   **** 	AS_Avr_Sleep(10);
+ 332:asuro_avr.c   **** 	
+ 333:asuro_avr.c   **** 	AS_ADC_START;				// start A/D conversion
+ 471               		.stabn 68,0,333,.LM50-AS_SensSwitchesRead
+ 472               	.LM50:
+ 473               	.LBE7:
+ 474               	.LBE6:
+ 475 0186 369A      		sbi 38-0x20,6
+ 334:asuro_avr.c   **** 	while (!AS_ADC_FINISHED);	// wait for ADC to finish
+ 476               		.stabn 68,0,334,.LM51-AS_SensSwitchesRead
+ 477               	.LM51:
+ 478               	.L49:
+ 479 0188 349B      		sbis 38-0x20,4
+ 480 018a FECF      		rjmp .L49
+ 335:asuro_avr.c   **** 	AS_ADC_STOP;				// stop A/D conversion (clear finished flag)
+ 481               		.stabn 68,0,335,.LM52-AS_SensSwitchesRead
+ 482               	.LM52:
+ 483 018c 349A      		sbi 38-0x20,4
+ 336:asuro_avr.c   **** 	value = AS_ADC_VALUE;
+ 484               		.stabn 68,0,336,.LM53-AS_SensSwitchesRead
+ 485               	.LM53:
+ 486 018e 24B1      		in r18,36-0x20
+ 487 0190 85B1      		in r24,37-0x20
+ 488 0192 9927      		clr r25
+ 489 0194 982F      		mov r25,r24
+ 490 0196 8827      		clr r24
+ 491 0198 820F      		add r24,r18
+ 492 019a 911D      		adc r25,__zero_reg__
+ 337:asuro_avr.c   **** 	
+ 338:asuro_avr.c   **** 	AS_SENS_SWITCHES_OFF;
+ 493               		.stabn 68,0,338,.LM54-AS_SensSwitchesRead
+ 494               	.LM54:
+ 495 019c 9398      		cbi 50-0x20,3
+ 339:asuro_avr.c   **** 	
+ 340:asuro_avr.c   **** 	// if no switch is pressed, the ADC value will be around 1024, and if all 
+ 341:asuro_avr.c   **** 	// are pressed it is around 512
+ 342:asuro_avr.c   **** 	return (char) (((1024000000UL/((unsigned long) value) - 1000000UL)*63UL + 500000UL) / 1000000UL);
+ 496               		.stabn 68,0,342,.LM55-AS_SensSwitchesRead
+ 497               	.LM55:
+ 498 019e 9C01      		movw r18,r24
+ 499 01a0 4427      		clr r20
+ 500 01a2 5527      		clr r21
+ 501 01a4 60E0      		ldi r22,lo8(1024000000)
+ 502 01a6 70E0      		ldi r23,hi8(1024000000)
+ 503 01a8 89E0      		ldi r24,hlo8(1024000000)
+ 504 01aa 9DE3      		ldi r25,hhi8(1024000000)
+ 505 01ac 00D0      		rcall __udivmodsi4
+ 506 01ae DA01      		movw r26,r20
+ 507 01b0 C901      		movw r24,r18
+ 508 01b2 66E0      		ldi r22,6
+ 509 01b4 880F      	1:	lsl r24
+ 510 01b6 991F      		rol r25
+ 511 01b8 AA1F      		rol r26
+ 512 01ba BB1F      		rol r27
+ 513 01bc 6A95      		dec r22
+GAS LISTING /tmp/ccn0jEfz.s 			page 16
+
+
+ 514 01be D1F7      		brne 1b
+ 515 01c0 821B      		sub r24,r18
+ 516 01c2 930B      		sbc r25,r19
+ 517 01c4 A40B      		sbc r26,r20
+ 518 01c6 B50B      		sbc r27,r21
+ 519 01c8 805A      		subi r24,lo8(-(-62500000))
+ 520 01ca 9C4A      		sbci r25,hi8(-(-62500000))
+ 521 01cc A94B      		sbci r26,hlo8(-(-62500000))
+ 522 01ce B340      		sbci r27,hhi8(-(-62500000))
+ 523 01d0 BC01      		movw r22,r24
+ 524 01d2 CD01      		movw r24,r26
+ 525 01d4 20E4      		ldi r18,lo8(1000000)
+ 526 01d6 32E4      		ldi r19,hi8(1000000)
+ 527 01d8 4FE0      		ldi r20,hlo8(1000000)
+ 528 01da 50E0      		ldi r21,hhi8(1000000)
+ 529 01dc 00D0      		rcall __udivmodsi4
+ 530 01de DA01      		movw r26,r20
+ 531 01e0 C901      		movw r24,r18
+ 532 01e2 9927      		clr r25
+ 343:asuro_avr.c   **** }
+ 533               		.stabn 68,0,343,.LM56-AS_SensSwitchesRead
+ 534               	.LM56:
+ 535               	.LBE5:
+ 536               	/* epilogue: frame size=0 */
+ 537 01e4 0895      		ret
+ 538               	/* epilogue end (size=1) */
+ 539               	/* function AS_SensSwitchesRead size 59 (58) */
+ 540               		.size	AS_SensSwitchesRead, .-AS_SensSwitchesRead
+ 541               		.stabs	"tick:r(0,11)",64,0,104,25
+ 542               		.stabn	192,0,0,.LBB7-AS_SensSwitchesRead
+ 543               		.stabn	224,0,0,.LBE7-AS_SensSwitchesRead
+ 544               	.Lscope6:
+ 545               		.stabs	"",36,0,0,.Lscope6-AS_SensSwitchesRead
+ 546               		.stabs	"AS_Avr_Sleep:F(0,20)",36,0,103,AS_Avr_Sleep
+ 547               		.stabs	"ticks:P(0,11)",64,0,102,24
+ 548               	.global	AS_Avr_Sleep
+ 549               		.type	AS_Avr_Sleep, @function
+ 550               	AS_Avr_Sleep:
+ 551               		.stabn 68,0,103,.LM57-AS_Avr_Sleep
+ 552               	.LM57:
+ 553               	/* prologue: frame size=0 */
+ 554               	/* prologue end (size=0) */
+ 555               		.stabn 68,0,104,.LM58-AS_Avr_Sleep
+ 556               	.LM58:
+ 557               	.LBB8:
+ 558 01e6 9091 0000 		lds r25,AS_count36kHz
+ 559 01ea 980F      		add r25,r24
+ 560               		.stabn 68,0,105,.LM59-AS_Avr_Sleep
+ 561               	.LM59:
+ 562               	.L55:
+ 563 01ec 8091 0000 		lds r24,AS_count36kHz
+ 564 01f0 9817      		cp r25,r24
+ 565 01f2 E1F7      		brne .L55
+ 566               		.stabn 68,0,106,.LM60-AS_Avr_Sleep
+ 567               	.LM60:
+ 568               	.LBE8:
+ 569               	/* epilogue: frame size=0 */
+GAS LISTING /tmp/ccn0jEfz.s 			page 17
+
+
+ 570 01f4 0895      		ret
+ 571               	/* epilogue end (size=1) */
+ 572               	/* function AS_Avr_Sleep size 8 (7) */
+ 573               		.size	AS_Avr_Sleep, .-AS_Avr_Sleep
+ 574               		.stabs	"tick:r(0,11)",64,0,104,25
+ 575               		.stabn	192,0,0,.LBB8-AS_Avr_Sleep
+ 576               		.stabn	224,0,0,.LBE8-AS_Avr_Sleep
+ 577               	.Lscope7:
+ 578               		.stabs	"",36,0,0,.Lscope7-AS_Avr_Sleep
+ 579               		.stabs	"AS_Init:F(0,20)",36,0,112,AS_Init
+ 580               	.global	AS_Init
+ 581               		.type	AS_Init, @function
+ 582               	AS_Init:
+ 583               		.stabn 68,0,112,.LM61-AS_Init
+ 584               	.LM61:
+ 585               	/* prologue: frame size=0 */
+ 586               	/* prologue end (size=0) */
+ 587               		.stabn 68,0,116,.LM62-AS_Init
+ 588               	.LM62:
+ 589 01f6 89E7      		ldi r24,lo8(121)
+ 590 01f8 85BD      		out 69-0x20,r24
+ 591               		.stabn 68,0,117,.LM63-AS_Init
+ 592               	.LM63:
+ 593 01fa 81E9      		ldi r24,lo8(-111)
+ 594 01fc 83BD      		out 67-0x20,r24
+ 595               		.stabn 68,0,118,.LM64-AS_Init
+ 596               	.LM64:
+ 597 01fe 89B7      		in r24,89-0x20
+ 598 0200 8064      		ori r24,lo8(64)
+ 599 0202 89BF      		out 89-0x20,r24
+ 600               		.stabn 68,0,121,.LM65-AS_Init
+ 601               	.LM65:
+ 602 0204 1BB8      		out 43-0x20,__zero_reg__
+ 603               		.stabn 68,0,122,.LM66-AS_Init
+ 604               	.LM66:
+ 605 0206 1AB8      		out 42-0x20,__zero_reg__
+ 606               		.stabn 68,0,123,.LM67-AS_Init
+ 607               	.LM67:
+ 608 0208 96E8      		ldi r25,lo8(-122)
+ 609 020a 90BD      		out 64-0x20,r25
+ 610               		.stabn 68,0,124,.LM68-AS_Init
+ 611               	.LM68:
+ 612 020c 8FEC      		ldi r24,lo8(-49)
+ 613 020e 89B9      		out 41-0x20,r24
+ 614               		.stabn 68,0,127,.LM69-AS_Init
+ 615               	.LM69:
+ 616 0210 8FE3      		ldi r24,lo8(63)
+ 617 0212 87BB      		out 55-0x20,r24
+ 618               		.stabn 68,0,128,.LM70-AS_Init
+ 619               	.LM70:
+ 620 0214 84EF      		ldi r24,lo8(-12)
+ 621 0216 81BB      		out 49-0x20,r24
+ 622               		.stabn 68,0,131,.LM71-AS_Init
+ 623               	.LM71:
+ 624 0218 81EA      		ldi r24,lo8(-95)
+ 625 021a 8FBD      		out 79-0x20,r24
+ 626               		.stabn 68,0,133,.LM72-AS_Init
+GAS LISTING /tmp/ccn0jEfz.s 			page 18
+
+
+ 627               	.LM72:
+ 628 021c 82E0      		ldi r24,lo8(2)
+ 629 021e 8EBD      		out 78-0x20,r24
+ 630               		.stabn 68,0,136,.LM73-AS_Init
+ 631               	.LM73:
+ 632 0220 96B9      		out 38-0x20,r25
+ 633               		.stabn 68,0,138,.LM74-AS_Init
+ 634               	.LM74:
+ 635 0222 84B3      		in r24,52-0x20
+ 636 0224 8360      		ori r24,lo8(3)
+ 637 0226 84BB      		out 52-0x20,r24
+ 638               		.stabn 68,0,139,.LM75-AS_Init
+ 639               	.LM75:
+ 640 0228 A99A      		sbi 53-0x20,1
+ 641 022a A89A      		sbi 53-0x20,0
+ 642               		.stabn 68,0,140,.LM76-AS_Init
+ 643               	.LM76:
+ 644 022c A998      		cbi 53-0x20,1
+ 645 022e A898      		cbi 53-0x20,0
+ 646               		.stabn 68,0,141,.LM77-AS_Init
+ 647               	.LM77:
+ 648 0230 9798      		cbi 50-0x20,7
+ 649               		.stabn 68,0,142,.LM78-AS_Init
+ 650               	.LM78:
+ 651 0232 9698      		cbi 50-0x20,6
+ 652               		.stabn 68,0,143,.LM79-AS_Init
+ 653               	.LM79:
+ 654 0234 C098      		cbi 56-0x20,0
+ 655               		.stabn 68,0,144,.LM80-AS_Init
+ 656               	.LM80:
+ 657 0236 9298      		cbi 50-0x20,2
+ 658               		.stabn 68,0,146,.LM81-AS_Init
+ 659               	.LM81:
+ 660               		.stabn 68,0,256,.LM82-AS_Init
+ 661               	.LM82:
+ 662               	.LBB9:
+ 663 0238 90E2      		ldi r25,lo8(32)
+ 664               		.stabn 68,0,257,.LM83-AS_Init
+ 665               	.LM83:
+ 666 023a 82B3      		in r24,50-0x20
+ 667 023c 8F7C      		andi r24,lo8(-49)
+ 668 023e 892B      		or r24,r25
+ 669 0240 82BB      		out 50-0x20,r24
+ 670               		.stabn 68,0,258,.LM84-AS_Init
+ 671               	.LM84:
+ 672 0242 88B3      		in r24,56-0x20
+ 673 0244 8F7C      		andi r24,lo8(-49)
+ 674 0246 892B      		or r24,r25
+ 675 0248 88BB      		out 56-0x20,r24
+ 676               		.stabn 68,0,147,.LM85-AS_Init
+ 677               	.LM85:
+ 678               		.stabn 68,0,243,.LM86-AS_Init
+ 679               	.LM86:
+ 680               	.LBE9:
+ 681               	.LBB10:
+ 682 024a 80E0      		ldi r24,lo8(0)
+ 683 024c 90E0      		ldi r25,hi8(0)
+GAS LISTING /tmp/ccn0jEfz.s 			page 19
+
+
+ 684 024e 9BBD      		out (74)+1-0x20,r25
+ 685 0250 8ABD      		out 74-0x20,r24
+ 686               		.stabn 68,0,244,.LM87-AS_Init
+ 687               	.LM87:
+ 688 0252 99BD      		out (72)+1-0x20,r25
+ 689 0254 88BD      		out 72-0x20,r24
+ 690               		.stabn 68,0,148,.LM88-AS_Init
+ 691               	.LM88:
+ 692               	.LBE10:
+ 693 0256 C09A      		sbi 56-0x20,0
+ 694               		.stabn 68,0,149,.LM89-AS_Init
+ 695               	.LM89:
+ 696               	/* #APP */
+ 697 0258 7894      		sei
+ 698               		.stabn 68,0,150,.LM90-AS_Init
+ 699               	.LM90:
+ 700               	/* #NOAPP */
+ 701               	/* epilogue: frame size=0 */
+ 702 025a 0895      		ret
+ 703               	/* epilogue end (size=1) */
+ 704               	/* function AS_Init size 52 (51) */
+ 705               		.size	AS_Init, .-AS_Init
+ 706               		.stabs	"left_dir:r(0,11)",64,0,256,25
+ 707               		.stabn	192,0,0,.LBB9-AS_Init
+ 708               		.stabn	224,0,0,.LBE9-AS_Init
+ 709               	.Lscope8:
+ 710               		.stabs	"",36,0,0,.Lscope8-AS_Init
+ 711               		.stabs	"AS_GetClockTicks:F(0,5)",36,0,159,AS_GetClockTicks
+ 712               	.global	AS_GetClockTicks
+ 713               		.type	AS_GetClockTicks, @function
+ 714               	AS_GetClockTicks:
+ 715               		.stabn 68,0,159,.LM91-AS_GetClockTicks
+ 716               	.LM91:
+ 717               	/* prologue: frame size=0 */
+ 718               	/* prologue end (size=0) */
+ 719               		.stabn 68,0,160,.LM92-AS_GetClockTicks
+ 720               	.LM92:
+ 721 025c 8091 0000 		lds r24,AS_clockTicks
+ 722 0260 9091 0000 		lds r25,(AS_clockTicks)+1
+ 723 0264 A091 0000 		lds r26,(AS_clockTicks)+2
+ 724 0268 B091 0000 		lds r27,(AS_clockTicks)+3
+ 725 026c BA2F      		mov r27,r26
+ 726 026e A92F      		mov r26,r25
+ 727 0270 982F      		mov r25,r24
+ 728 0272 8827      		clr r24
+ 729 0274 2091 0000 		lds r18,AS_count36kHz
+ 730 0278 820F      		add r24,r18
+ 731 027a 911D      		adc r25,__zero_reg__
+ 732 027c A11D      		adc r26,__zero_reg__
+ 733 027e B11D      		adc r27,__zero_reg__
+ 734               		.stabn 68,0,161,.LM93-AS_GetClockTicks
+ 735               	.LM93:
+ 736 0280 BC01      		movw r22,r24
+ 737 0282 CD01      		movw r24,r26
+ 738               	/* epilogue: frame size=0 */
+ 739 0284 0895      		ret
+ 740               	/* epilogue end (size=1) */
+GAS LISTING /tmp/ccn0jEfz.s 			page 20
+
+
+ 741               	/* function AS_GetClockTicks size 21 (20) */
+ 742               		.size	AS_GetClockTicks, .-AS_GetClockTicks
+ 743               	.Lscope9:
+ 744               		.stabs	"",36,0,0,.Lscope9-AS_GetClockTicks
+ 745               		.stabs	"AS_GetSysTime:F(0,5)",36,0,170,AS_GetSysTime
+ 746               	.global	AS_GetSysTime
+ 747               		.type	AS_GetSysTime, @function
+ 748               	AS_GetSysTime:
+ 749               		.stabn 68,0,170,.LM94-AS_GetSysTime
+ 750               	.LM94:
+ 751               	/* prologue: frame size=0 */
+ 752               	/* prologue end (size=0) */
+ 753               		.stabn 68,0,171,.LM95-AS_GetSysTime
+ 754               	.LM95:
+ 755 0286 8091 0000 		lds r24,AS_clockTicks
+ 756 028a 9091 0000 		lds r25,(AS_clockTicks)+1
+ 757 028e A091 0000 		lds r26,(AS_clockTicks)+2
+ 758 0292 B091 0000 		lds r27,(AS_clockTicks)+3
+ 759 0296 BC01      		movw r22,r24
+ 760 0298 CD01      		movw r24,r26
+ 761 029a 24E2      		ldi r18,lo8(36)
+ 762 029c 30E0      		ldi r19,hi8(36)
+ 763 029e 40E0      		ldi r20,hlo8(36)
+ 764 02a0 50E0      		ldi r21,hhi8(36)
+ 765 02a2 00D0      		rcall __udivmodsi4
+ 766 02a4 542F      		mov r21,r20
+ 767 02a6 432F      		mov r20,r19
+ 768 02a8 322F      		mov r19,r18
+ 769 02aa 2227      		clr r18
+ 770 02ac 8091 0000 		lds r24,AS_count36kHz
+ 771 02b0 64E2      		ldi r22,lo8(36)
+ 772 02b2 00D0      		rcall __udivmodqi4
+ 773 02b4 280F      		add r18,r24
+ 774 02b6 311D      		adc r19,__zero_reg__
+ 775 02b8 411D      		adc r20,__zero_reg__
+ 776 02ba 511D      		adc r21,__zero_reg__
+ 777               		.stabn 68,0,172,.LM96-AS_GetSysTime
+ 778               	.LM96:
+ 779 02bc CA01      		movw r24,r20
+ 780 02be B901      		movw r22,r18
+ 781               	/* epilogue: frame size=0 */
+ 782 02c0 0895      		ret
+ 783               	/* epilogue end (size=1) */
+ 784               	/* function AS_GetSysTime size 30 (29) */
+ 785               		.size	AS_GetSysTime, .-AS_GetSysTime
+ 786               	.Lscope10:
+ 787               		.stabs	"",36,0,0,.Lscope10-AS_GetSysTime
+ 788               		.stabs	"AS_StatusLED:F(0,20)",36,0,198,AS_StatusLED
+ 789               		.stabs	"color:P(0,11)",64,0,197,24
+ 790               	.global	AS_StatusLED
+ 791               		.type	AS_StatusLED, @function
+ 792               	AS_StatusLED:
+ 793               		.stabn 68,0,198,.LM97-AS_StatusLED
+ 794               	.LM97:
+ 795               	/* prologue: frame size=0 */
+ 796               	/* prologue end (size=0) */
+ 797               		.stabn 68,0,199,.LM98-AS_StatusLED
+GAS LISTING /tmp/ccn0jEfz.s 			page 21
+
+
+ 798               	.LM98:
+ 799 02c2 9927      		clr r25
+ 800 02c4 80FF      		sbrs r24,0
+ 801 02c6 02C0      		rjmp .L64
+ 802 02c8 C09A      		sbi 56-0x20,0
+ 803 02ca 01C0      		rjmp .L65
+ 804               	.L64:
+ 805 02cc C098      		cbi 56-0x20,0
+ 806               	.L65:
+ 807               		.stabn 68,0,200,.LM99-AS_StatusLED
+ 808               	.LM99:
+ 809 02ce 81FF      		sbrs r24,1
+ 810 02d0 02C0      		rjmp .L66
+ 811 02d2 929A      		sbi 50-0x20,2
+ 812               		.stabn 68,0,201,.LM100-AS_StatusLED
+ 813               	.LM100:
+ 814 02d4 0895      		ret
+ 815               	.L66:
+ 816 02d6 9298      		cbi 50-0x20,2
+ 817 02d8 0895      		ret
+ 818               	/* epilogue: frame size=0 */
+ 819 02da 0895      		ret
+ 820               	/* epilogue end (size=1) */
+ 821               	/* function AS_StatusLED size 13 (12) */
+ 822               		.size	AS_StatusLED, .-AS_StatusLED
+ 823               	.Lscope11:
+ 824               		.stabs	"",36,0,0,.Lscope11-AS_StatusLED
+ 825               		.stabs	"AS_FrontLED:F(0,20)",36,0,210,AS_FrontLED
+ 826               		.stabs	"status:P(0,11)",64,0,209,24
+ 827               	.global	AS_FrontLED
+ 828               		.type	AS_FrontLED, @function
+ 829               	AS_FrontLED:
+ 830               		.stabn 68,0,210,.LM101-AS_FrontLED
+ 831               	.LM101:
+ 832               	/* prologue: frame size=0 */
+ 833               	/* prologue end (size=0) */
+ 834               		.stabn 68,0,211,.LM102-AS_FrontLED
+ 835               	.LM102:
+ 836 02dc 8823      		tst r24
+ 837 02de 11F0      		breq .L69
+ 838 02e0 969A      		sbi 50-0x20,6
+ 839               		.stabn 68,0,212,.LM103-AS_FrontLED
+ 840               	.LM103:
+ 841 02e2 0895      		ret
+ 842               	.L69:
+ 843 02e4 9698      		cbi 50-0x20,6
+ 844 02e6 0895      		ret
+ 845               	/* epilogue: frame size=0 */
+ 846 02e8 0895      		ret
+ 847               	/* epilogue end (size=1) */
+ 848               	/* function AS_FrontLED size 7 (6) */
+ 849               		.size	AS_FrontLED, .-AS_FrontLED
+ 850               	.Lscope12:
+ 851               		.stabs	"",36,0,0,.Lscope12-AS_FrontLED
+ 852               		.stabs	"AS_BackLED:F(0,20)",36,0,223,AS_BackLED
+ 853               		.stabs	"left:P(0,11)",64,0,222,25
+ 854               		.stabs	"right:P(0,11)",64,0,222,22
+GAS LISTING /tmp/ccn0jEfz.s 			page 22
+
+
+ 855               	.global	AS_BackLED
+ 856               		.type	AS_BackLED, @function
+ 857               	AS_BackLED:
+ 858               		.stabn 68,0,223,.LM104-AS_BackLED
+ 859               	.LM104:
+ 860               	/* prologue: frame size=0 */
+ 861               	/* prologue end (size=0) */
+ 862 02ea 982F      		mov r25,r24
+ 863               		.stabn 68,0,224,.LM105-AS_BackLED
+ 864               	.LM105:
+ 865 02ec 8823      		tst r24
+ 866 02ee 11F4      		brne .L73
+ 867 02f0 6623      		tst r22
+ 868 02f2 21F0      		breq .L72
+ 869               	.L73:
+ 870               		.stabn 68,0,225,.LM106-AS_BackLED
+ 871               	.LM106:
+ 872 02f4 9798      		cbi 50-0x20,7
+ 873               		.stabn 68,0,226,.LM107-AS_BackLED
+ 874               	.LM107:
+ 875 02f6 84B3      		in r24,52-0x20
+ 876 02f8 8360      		ori r24,lo8(3)
+ 877 02fa 84BB      		out 52-0x20,r24
+ 878               	.L72:
+ 879               		.stabn 68,0,230,.LM108-AS_BackLED
+ 880               	.LM108:
+ 881 02fc 9923      		tst r25
+ 882 02fe 11F0      		breq .L74
+ 883 0300 A99A      		sbi 53-0x20,1
+ 884 0302 01C0      		rjmp .L75
+ 885               	.L74:
+ 886 0304 A998      		cbi 53-0x20,1
+ 887               	.L75:
+ 888               		.stabn 68,0,231,.LM109-AS_BackLED
+ 889               	.LM109:
+ 890 0306 6623      		tst r22
+ 891 0308 11F0      		breq .L76
+ 892 030a A89A      		sbi 53-0x20,0
+ 893               		.stabn 68,0,232,.LM110-AS_BackLED
+ 894               	.LM110:
+ 895 030c 0895      		ret
+ 896               	.L76:
+ 897 030e A898      		cbi 53-0x20,0
+ 898 0310 0895      		ret
+ 899               	/* epilogue: frame size=0 */
+ 900 0312 0895      		ret
+ 901               	/* epilogue end (size=1) */
+ 902               	/* function AS_BackLED size 21 (20) */
+ 903               		.size	AS_BackLED, .-AS_BackLED
+ 904               	.Lscope13:
+ 905               		.stabs	"",36,0,0,.Lscope13-AS_BackLED
+ 906               		.stabs	"AS_MotorSpeed:F(0,20)",36,0,242,AS_MotorSpeed
+ 907               		.stabs	"left_speed:P(0,11)",64,0,241,24
+ 908               		.stabs	"right_speed:P(0,11)",64,0,241,18
+ 909               	.global	AS_MotorSpeed
+ 910               		.type	AS_MotorSpeed, @function
+ 911               	AS_MotorSpeed:
+GAS LISTING /tmp/ccn0jEfz.s 			page 23
+
+
+ 912               		.stabn 68,0,242,.LM111-AS_MotorSpeed
+ 913               	.LM111:
+ 914               	/* prologue: frame size=0 */
+ 915               	/* prologue end (size=0) */
+ 916               		.stabn 68,0,243,.LM112-AS_MotorSpeed
+ 917               	.LM112:
+ 918 0314 9927      		clr r25
+ 919 0316 9BBD      		out (74)+1-0x20,r25
+ 920 0318 8ABD      		out 74-0x20,r24
+ 921               		.stabn 68,0,244,.LM113-AS_MotorSpeed
+ 922               	.LM113:
+ 923 031a 862F      		mov r24,r22
+ 924 031c 9927      		clr r25
+ 925 031e 99BD      		out (72)+1-0x20,r25
+ 926 0320 88BD      		out 72-0x20,r24
+ 927               		.stabn 68,0,245,.LM114-AS_MotorSpeed
+ 928               	.LM114:
+ 929               	/* epilogue: frame size=0 */
+ 930 0322 0895      		ret
+ 931               	/* epilogue end (size=1) */
+ 932               	/* function AS_MotorSpeed size 8 (7) */
+ 933               		.size	AS_MotorSpeed, .-AS_MotorSpeed
+ 934               	.Lscope14:
+ 935               		.stabs	"",36,0,0,.Lscope14-AS_MotorSpeed
+ 936               		.stabs	"AS_MotorDir:F(0,20)",36,0,256,AS_MotorDir
+ 937               		.stabs	"left_dir:P(0,11)",64,0,255,25
+ 938               		.stabs	"right_dir:P(0,11)",64,0,255,18
+ 939               	.global	AS_MotorDir
+ 940               		.type	AS_MotorDir, @function
+ 941               	AS_MotorDir:
+ 942               		.stabn 68,0,256,.LM115-AS_MotorDir
+ 943               	.LM115:
+ 944               	/* prologue: frame size=0 */
+ 945               	/* prologue end (size=0) */
+ 946 0324 982F      		mov r25,r24
+ 947               		.stabn 68,0,257,.LM116-AS_MotorDir
+ 948               	.LM116:
+ 949 0326 82B3      		in r24,50-0x20
+ 950 0328 8F7C      		andi r24,lo8(-49)
+ 951 032a 892B      		or r24,r25
+ 952 032c 82BB      		out 50-0x20,r24
+ 953               		.stabn 68,0,258,.LM117-AS_MotorDir
+ 954               	.LM117:
+ 955 032e 88B3      		in r24,56-0x20
+ 956 0330 8F7C      		andi r24,lo8(-49)
+ 957 0332 862B      		or r24,r22
+ 958 0334 88BB      		out 56-0x20,r24
+ 959               		.stabn 68,0,259,.LM118-AS_MotorDir
+ 960               	.LM118:
+ 961               	/* epilogue: frame size=0 */
+ 962 0336 0895      		ret
+ 963               	/* epilogue end (size=1) */
+ 964               	/* function AS_MotorDir size 10 (9) */
+ 965               		.size	AS_MotorDir, .-AS_MotorDir
+ 966               	.Lscope15:
+ 967               		.stabs	"",36,0,0,.Lscope15-AS_MotorDir
+ 968               		.stabs	"AS_sensSwitched:G(1,2)=B(0,2)",32,0,55,0
+GAS LISTING /tmp/ccn0jEfz.s 			page 24
+
+
+ 969               		.stabs	"AS_sensSwitchesOn:G(1,2)",32,0,49,0
+ 970               		.stabs	"AS_UserIsrInterrupt1:G(1,3)=B(2,1)",32,0,25,0
+ 971               		.stabs	"AS_count36kHz:G(1,4)=B(0,11)",32,0,31,0
+ 972               		.stabs	"AS_clockTicks:G(1,5)=B(0,5)",32,0,37,0
+ 973               		.stabs	"AS_irrc5DecodeEnabled:G(1,4)",32,0,43,0
+ 974               		.text
+ 975               		.stabs "",100,0,0,Letext
+ 976               	Letext:
+ 977               	/* File "asuro_avr.c": code  416 = 0x01a0 ( 334), prologues  34, epilogues  48 */
+GAS LISTING /tmp/ccn0jEfz.s 			page 25
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 asuro_avr.c
+                            *ABS*:0000003f __SREG__
+                            *ABS*:0000003e __SP_H__
+                            *ABS*:0000003d __SP_L__
+                            *ABS*:00000000 __tmp_reg__
+                            *ABS*:00000001 __zero_reg__
+     /tmp/ccn0jEfz.s:62     .bss:00000000 AS_UserIsrInterrupt1
+     /tmp/ccn0jEfz.s:68     .bss:00000002 AS_count36kHz
+     /tmp/ccn0jEfz.s:74     .bss:00000003 AS_clockTicks
+     /tmp/ccn0jEfz.s:80     .data:00000000 AS_irrc5DecodeEnabled
+     /tmp/ccn0jEfz.s:87     .bss:00000007 AS_sensSwitchesOn
+     /tmp/ccn0jEfz.s:93     .bss:00000008 AS_sensSwitched
+     /tmp/ccn0jEfz.s:99     .text:00000000 __vector_4
+     /tmp/ccn0jEfz.s:188    .text:00000094 __vector_2
+     /tmp/ccn0jEfz.s:421    .text:00000168 AS_SensSwitchesInterruptOff
+     /tmp/ccn0jEfz.s:256    .text:000000f6 AS_Sleep
+     /tmp/ccn0jEfz.s:301    .text:0000010e AS_SerWrite
+     /tmp/ccn0jEfz.s:385    .text:00000152 AS_SensSwitchesInterruptOn
+     /tmp/ccn0jEfz.s:443    .text:00000170 AS_SensSwitchesRead
+     /tmp/ccn0jEfz.s:550    .text:000001e6 AS_Avr_Sleep
+     /tmp/ccn0jEfz.s:582    .text:000001f6 AS_Init
+     /tmp/ccn0jEfz.s:714    .text:0000025c AS_GetClockTicks
+     /tmp/ccn0jEfz.s:748    .text:00000286 AS_GetSysTime
+     /tmp/ccn0jEfz.s:792    .text:000002c2 AS_StatusLED
+     /tmp/ccn0jEfz.s:829    .text:000002dc AS_FrontLED
+     /tmp/ccn0jEfz.s:857    .text:000002ea AS_BackLED
+     /tmp/ccn0jEfz.s:911    .text:00000314 AS_MotorSpeed
+     /tmp/ccn0jEfz.s:941    .text:00000324 AS_MotorDir
+     /tmp/ccn0jEfz.s:976    .text:00000338 Letext
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+AS_isr_irrc5
+__udivmodsi4
+__udivmodqi4

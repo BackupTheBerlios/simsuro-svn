@@ -1,0 +1,15 @@
+
+This code is pre-alpha and NOT yet ready-to-use (as is the
+documentation).
+
+Getting started (assuming you've already set up a working
+avr-gcc environment under Linux):
+
+1) Select your application in editing target/app-make.in
+2) Go to the target/avr directory and type 'make'
+3) Download the resulting .hex file to your ASURO
+
+To generate a source code documentation, go to the simsuro
+directory and type 'doxygen'. After that, you should have
+some html-docs in the doc directory (open doc/html/index.html
+in your browser).
